@@ -11,4 +11,9 @@ cat ~/.ssh/id_rsa.pub | ssh user@machine "mkdir ~/.ssh; cat >> ~/.ssh/authorized
 ## [Copy files and change ownership at the sametime](http://unix.stackexchange.com/questions/124855/move-files-and-change-ownership-at-the-sametime)
 ```bash
  rsync -r --chown=user:group srcDir/ destDir/
- ```
+```
+
+## [Solaris sed -i alternative](https://stackoverflow.com/questions/3576380/sed-i-what-the-same-option-in-solaris)
+```
+perl -pi -e 's/find/replace/g' file
+```
